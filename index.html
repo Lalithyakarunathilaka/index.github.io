@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Personal Website</title>
+    <style>
+        body {
+
+            margin: 10px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            border: 2px #fd4766;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-size: 100px;
+            background-color: rgb(250, 232, 247);
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 100px;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+
+        }
+
+        nav ul li a {
+            color: #1d1d24;
+            position: relative;
+            padding: 5px 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        nav ul li a:hover {
+            color: #c048a6;
+
+        }
+
+        nav ul li a:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #fd4766;
+            transition: .3s;
+            bottom: 0;
+
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        .btn {
+            color: rgb(58, 15, 15);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 16px 40px;
+            border-radius: 500px;
+            display: inline-block;
+            font-weight: 500;
+            transition: all .4s ease-in-out;
+            background-size: 152% 100%;
+            background: #faa1d8;
+            border: 2px solid #5c0f3f;
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: #df687c;
+            color: #fd4766;
+        }
+
+        .content {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+        }
+
+        .content .title {
+            color: #1f1f25;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+            background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content h1 {
+            color: #1f1f25;
+            font-size: 50px;
+            font-weight: 800;
+            line-height: 90px;
+            text-transform: inherit;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content h1 span {
+            color: #f383e0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 60px;
+        }
+
+        .content p {
+            width: 55%;
+            color: #757575;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 10%;
+            right: -150px;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="hero" style="border: 5px rgb(184, 78, 95);">
+        <nav>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Qualities</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">My Works</a>
+        </nav>
+        <div class="top-left">
+
+        </div>
+        <div class="content">
+
+            <span class="title">Undergraduate in University of Moratuwa.</span>
+            <h1>Hello, This is me <span>Lalithya</span></h1>
+            <p>I’m studing at University of Moratuwa, Faculty of Information Technology and Managment</p>
+            <img src="data:image/jpeg;base64,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" alt="fb" width="50px"
+                height="50px">
+            <img src="data:image/jpeg;base64,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" alt="inster"
+                width="50px" height="50px"><br><br>
+            <div class="top-right">
+                <img src="mypic.jpg" alt="img" width="300px" height="570px">
+            </div >
+            <table border="2px" style="color: rgb(48, 16, 43);" >
+                <tr>
+                    <th>About Me</th> 
+                </tr>
+                <tr>
+                    <td>I'm Lalithya Karunathilaka</td>
+                </tr>
+                <tr>
+                    <td>Age:22</td>
+                </tr>
+                <tr>
+                    <td>School:Studied at Holy Family Balika,Kurunegala</td>
+                </tr>
+                <tr>
+                    <td>Contact Number: 071-2549685</td>
+                </tr>
+                <tr>
+                    <td>Email:Lali@gmail.com</td>
+                </tr>
+            </table>
+
+        </div>
+
+</body>
+
+</html>
